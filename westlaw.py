@@ -110,10 +110,6 @@ for i in range(1, 100):
                         file_date = date.replace('/', '-')
                         file_number = docket.find_element_by_xpath('.//tr[{}]/td[1]'.format(j)).text
                         orig_file_name = file_docket_number + '_DocketEntry_' + file_date + '_' + file_number
-<<<<<<< HEAD
-=======
-                        print(orig_file_name)
->>>>>>> bcb142f4ca0713746e1b267944b160113c089f72
                         new_date = date[6:] + ' ' + date[0:2] + ' ' + date[3:5]
                         raw_desc = docket.find_element_by_xpath('.//tr[{}]/td[3]'.format(j)).text
                         try:
@@ -132,14 +128,8 @@ for i in range(1, 100):
                         new_file_name = new_file_name.replace('<', '')
                         new_file_name = new_file_name.replace('>', '')
                         new_file_name = new_file_name.replace('|', '')
-<<<<<<< HEAD
                         time.sleep(5)
                         os.rename(dirname + '\\downloads\\' + orig_file_name + '.pdf', dirname + '\\downloads\\' + new_file_name + '.pdf')
-=======
-                        print(new_file_name)
-                        time.sleep(5)
-                        os.rename(r'C:\\Users\\Admin\\Desktop\\Westlaw\\downloads\\' + orig_file_name + '.pdf', r'C:\\Users\\Admin\\Desktop\\Westlaw\\downloads\\' + new_file_name + '.pdf')
->>>>>>> bcb142f4ca0713746e1b267944b160113c089f72
                     else:
                         pass
                 except NoSuchElementException:
@@ -149,8 +139,4 @@ for i in range(1, 100):
                 break
     except NoSuchElementException:
         break
-<<<<<<< HEAD
 print('List of cases to manually check: ' + str(errored_cases))
-=======
-print(errored_cases)
->>>>>>> bcb142f4ca0713746e1b267944b160113c089f72

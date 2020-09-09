@@ -1,5 +1,5 @@
 # Westlaw
-Docket Sweep
+Automating and speeding up docket sweeps.
 
 ## Getting Started
 1. Download and install [Anaconda](https://www.anaconda.com/)

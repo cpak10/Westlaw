@@ -1,5 +1,5 @@
 # Westlaw
-The following scripts automates a process in the legal field for keeping tabs on key cases. Traditionally, the process has been to have someone, usually a paralegal, click through different case dockets and pull recent filing. These scripts use Selenium to automate this and turn an hour long task into a couple of minutes.
+The following scripts automates a process in the legal field for keeping tabs on key cases. Traditionally, the process has been to have someone, usually a paralegal, click through different case dockets and pull recent filings. These scripts use Selenium to automate this and turn an hour long task into a couple of minutes.
 
 ## Getting Started
 1. Download and install [Anaconda](https://www.anaconda.com/)
